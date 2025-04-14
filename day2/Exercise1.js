@@ -5,3 +5,5 @@
 // 2. Print the string on the browser console using console.log()
    console.log(challenge)
 
+// 3. Print the length of the string on the browser console using console.log()
+   console.log(challenge.length)
