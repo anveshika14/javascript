@@ -15,6 +15,7 @@
       let salary = text.match(/\d+/g).map(Number);
       let totalIncome = salary.reduce((acc, curr) => acc + curr, 0);
       console.log(totalIncome);
+      
         
 
 
