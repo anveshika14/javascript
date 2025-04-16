@@ -9,7 +9,7 @@
       console.log(vowels);
 
 // 3. Clean the following text and find the most frequent word (hint, use replace and regular expressions).
-  
+//not done
 // 4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
       let text = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
       let salary = text.match(/\d+/g).map(Number);
