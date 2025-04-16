@@ -27,3 +27,5 @@ else if (month1 == "April" || month1 == "June" || month1 == "September" || month
 else {
     console.log(month1 + "has 31 days ");
 }
+
+//
