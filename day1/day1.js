@@ -14,7 +14,7 @@
 // 4. Create a variable.js file and declare variables and assign string, boolean, undefined and null data types.
 // Declare variables
    let str="Anveshika"
-   let x=true
+   let x=true;
    let y;
    let n=null
    console.log(str,x,y,n)
