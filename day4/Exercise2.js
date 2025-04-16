@@ -24,11 +24,11 @@ else {
     console.log("Invalid score");
 }
 
-//2. Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
-//September, October or November, it is Autumn.
-//December, January or February, it is Winter.
-//March, April or May, it is Spring.
-//June, July or August, it is Summer.
+/*2. Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
+September, October or November, it is Autumn.
+December, January or February, it is Winter.
+March, April or May, it is Spring.
+June, July or August, it is Summer.*/
 let month = prompt("Enter a month: ");
 if (month == "September" || month == "October" || month == "November") {
     console.log("Autumn");
