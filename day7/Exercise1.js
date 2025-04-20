@@ -56,4 +56,3 @@ function speed(distance, time) {
     return distance / time;
 }
 console.log(speed(100, 2));
-
