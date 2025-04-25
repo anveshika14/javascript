@@ -10,3 +10,4 @@ const tenMostFrequentWords = (text) => {
     return sortedWords.slice(0, 10).map(entry => entry[0]); // Return the ten most frequent words
 };
 console.log(tenMostFrequentWords(text)); // Output the result
+ 
