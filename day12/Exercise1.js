@@ -18,3 +18,8 @@ const maxParticle = Math.max(...particles); // Find the maximum particle positio
 const distance = maxParticle - minParticle; // Calculate the distance between the two furthest particles
 console.log(`Distance between the two furthest particles: ${distance}`); // Output the result
 
+//3. Write a pattern which identify if a string is a valid JavaScript variable
+const variableName = 'myVariable'; // Example variable name
+const isValidVariable = /^[a-zA-Z_$][0-9a-zA-Z_$]*$/.test(variableName); // Regular expression to check valid variable name
+console.log(`Is "${variableName}" a valid JavaScript variable? ${isValidVariable}`); // Output the result
+
