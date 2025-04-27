@@ -1,3 +1,5 @@
+// throw: the throw statement allows us to create a custom error.
+
 const throwErrorExampleFun = () => {
     let message
     let x = prompt('Enter a number: ')
