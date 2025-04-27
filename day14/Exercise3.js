@@ -8,3 +8,7 @@ console.log(fullName)
 let square = 2 * 2
 console.log(square)
 console.log('Hello, world')
+
+// 3-TypeError: A type error has occurred
+let num = 10
+console.log(num.toLowerCase())
