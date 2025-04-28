@@ -76,4 +76,37 @@ console.log("Count:", stats.count());
 console.log("90th Percentile:", stats.percentile(90)); 
 console.log("Frequency Distribution:", stats.frequencyDistribution()); 
 
-//2. 
+//2. Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+
+class PersonAccount {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.incomes = [];
+        this.expenses = [];
+    }
+
+    addIncome(description, amount) {
+        this.incomes.push({ description, amount });
+    }
+
+    addExpense(description, amount) {
+        this.expenses.push({ description, amount });
+    }
+
+    totalIncome() {
+        return this.incomes.reduce((acc, income) => acc + income.amount, 0);
+    }
+
+    totalExpense() {
+        return this.expenses.reduce((acc, expense) => acc + expense.amount, 0);
+    }
+
+    accountBalance() {
+        return this.totalIncome() - this.totalExpense();
+    }
+
+    accountInfo() {
+        return `Account Holder: ${this.firstName} ${this.lastName}\nTotal Income: $${this.totalIncome()}\nTotal Expense: $${this.totalExpense()}\nAccount Balance: $${this.accountBalance()}`;
+    }
+}
