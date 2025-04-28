@@ -17,3 +17,22 @@ class Animal {
     }
     }
 
+//2. Create a Dog and Cat child class from the Animal Class.
+class Dog extends Animal {
+    constructor(name, age, color, legs) {
+        super(name, age, color, legs);
+    }
+    
+    makeSound() {
+        return `${this.name} barks.`;
+    }
+}
+class Cat extends Animal {
+    constructor(name, age, color, legs) {
+        super(name, age, color, legs);
+    }
+    
+    makeSound() {
+        return `${this.name} meows.`;
+    }
+}
