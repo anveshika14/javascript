@@ -12,3 +12,13 @@ console.log(ageJSON);
 const isMarried = false;
 const isMarriedJSON = JSON.stringify(isMarried);
 console.log(isMarriedJSON);
+
+//4.Stringify the student object
+const student = {
+    name: 'John',
+    age: 25,
+    isMarried: false,
+    skills: ['HTML', 'CSS', 'JavaScript']
+};
+const studentJSON = JSON.stringify(student);
+console.log(studentJSON);
