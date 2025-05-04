@@ -77,3 +77,42 @@
 
 </body>
 </html>
+
+<!-- 3.Set text content, id and class to each paragraph -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set Text, ID, and Class</title>
+</head>
+<body>
+
+  <!-- Empty paragraphs to modify -->
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+
+  <script>
+    const paragraphs = document.querySelectorAll('p');
+
+    // Set text content, id, and class for each paragraph
+    paragraphs[0].textContent = "This is the first paragraph.";
+    paragraphs[0].id = "para1";
+    paragraphs[0].className = "first-class";
+
+    paragraphs[1].textContent = "This is the second paragraph.";
+    paragraphs[1].setAttribute("id", "para2");
+    paragraphs[1].setAttribute("class", "second-class");
+
+    paragraphs[2].textContent = "This is the third paragraph.";
+    paragraphs[2].id = "para3";
+    paragraphs[2].classList.add("third-class");
+
+    paragraphs[3].textContent = "This is the fourth paragraph.";
+    paragraphs[3].setAttribute("id", "para4");
+    paragraphs[3].classList.add("fourth-class");
+  </script>
+
+</body>
+</html>
