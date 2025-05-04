@@ -1,0 +1,149 @@
+//1.Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paragraph Selector Example</title>
+</head>
+<body>
+
+  <p id="para1">This is the first paragraph.</p>
+  <p id="para2">This is the second paragraph.</p>
+  <p id="para3">This is the third paragraph.</p>
+  <p id="para4">This is the fourth paragraph.</p>
+
+  <script>
+    // Get the first paragraph using the tag name
+    const firstParagraph = document.querySelector('p');
+    console.log(firstParagraph.textContent);
+  </script>
+
+</body>
+</html>
+
+<!-- 2.Get each of the the paragraph using document.querySelector('#id') and by their id -->
+<script>
+const paragraph1 = document.querySelector('#para1');
+const paragraph2 = document.querySelector('#para2');
+const paragraph3 = document.querySelector('#para3');
+
+console.log(paragraph1.textContent);
+console.log(paragraph2.textContent);
+console.log(paragraph3.textContent);
+</script>
+
+<!-- 3.Get all the p as nodeList using document.querySelectorAll(tagname) and by their tag name -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select All Paragraphs</title>
+</head>
+<body>
+
+  <p id="para1">This is the first paragraph.</p>
+  <p id="para2">This is the second paragraph.</p>
+  <p id="para3">This is the third paragraph.</p>
+  <p id="para4">This is the fourth paragraph.</p>
+
+  <script>
+    // Get all <p> elements as a NodeList using tag name
+    const allParagraphs = document.querySelectorAll('p');
+    
+    // Loop through and log each paragraph's text
+    allParagraphs.forEach((p, index) => {
+      console.log(`Paragraph ${index + 1}:`, p.textContent);
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- 4.Loop through the nodeList and get the text content of each paragraph -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loop Through Paragraphs</title>
+</head>
+<body>
+
+  <p id="para1">This is the first paragraph.</p>
+  <p id="para2">This is the second paragraph.</p>
+  <p id="para3">This is the third paragraph.</p>
+  <p id="para4">This is the fourth paragraph.</p>
+
+  <script>
+    // Get all <p> elements as a NodeList
+    const allParagraph = document.querySelectorAll('p');
+
+    // Loop through the NodeList and log text content
+    allParagraph.forEach((paragraph, index) => {
+      console.log(`Paragraph ${index + 1}: ${paragraph.textContent}`);
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- 5.Set a text content to paragraph the fourth paragraph,Fourth Paragraph -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set Text Content</title>
+</head>
+<body>
+
+  <p id="para1">This is the first paragraph.</p>
+  <p id="para2">This is the second paragraph.</p>
+  <p id="para3">This is the third paragraph.</p>
+  <p id="para4">This is the fourth paragraph.</p>
+
+  <script>
+    // Get all <p> elements as a NodeList
+    const allparagraphs = document.querySelectorAll('p');
+
+    // Set new text content to the fourth paragraph (index 3)
+    allparagraphs[3].textContent = "Fourth Paragraph";
+  </script>
+
+</body>
+</html>
+
+<!-- 6.Set id and class attribute for all the paragraphs using different attribute setting methods -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set ID and Class</title>
+</head>
+<body>
+
+  <p>This is the first paragraph.</p>
+  <p>This is the second paragraph.</p>
+  <p>This is the third paragraph.</p>
+  <p>This is the fourth paragraph.</p>
+
+  <script>
+    const paragraphs = document.querySelectorAll('p');
+
+    // 1. First paragraph: use .id and .className
+    paragraphs[0].id = "para1";
+    paragraphs[0].className = "first-class";
+
+    // 2. Second paragraph: use setAttribute()
+    paragraphs[1].setAttribute("id", "para2");
+    paragraphs[1].setAttribute("class", "second-class");
+
+    // 3. Third paragraph: use classList and .id
+    paragraphs[2].id = "para3";
+    paragraphs[2].classList.add("third-class");
+
+    // 4. Fourth paragraph: use setAttribute for id, and classList.add() for class
+    paragraphs[3].setAttribute("id", "para4");
+    paragraphs[3].classList.add("fourth-class");
+  </script>
+
+</body>
+</html>
