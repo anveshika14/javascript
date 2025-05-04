@@ -6,3 +6,84 @@ The date and time background color is changing every on seconds
 Completed challenge has background green
 Ongoing challenge has background yellow
 Coming challenges have background red -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Challenge Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <h1>2025 Web Development Challenges <span id="year">2025</span></h1>
+    <h2 id="date-time">Loading date and time...</h2>
+
+    <ul id="challenges">
+      <li>30 Days of HTML and CSS</li>
+      <li>30 Days of JavaScript</li>
+      <li>30 Days of React</li>
+      <li>30 Days of Fullstack</li>
+      <li>30 Days of Data Analysis</li>
+      <li>30 Days of Machine Learning</li>
+    </ul>
+  </div>
+
+  <script>
+    // Get references to elements
+const yearSpan = document.getElementById('year');
+const dateTime = document.getElementById('date-time');
+const challenges = document.querySelectorAll('#challenges li');
+
+// Array to simulate challenge statuses (can be dynamic)
+const status = ['completed', 'completed', 'ongoing', 'coming', 'coming', 'coming'];
+
+// 1. Change the year color every 1 second
+setInterval(() => {
+  yearSpan.style.color = getRandomColor();
+}, 1000);
+
+// 2. Update and style date/time every second
+setInterval(() => {
+  const now = new Date();
+  dateTime.textContent = now.toLocaleString();
+  dateTime.style.padding = '10px';
+  dateTime.style.color = '#fff';
+  dateTime.style.backgroundColor = getRandomColor();
+  dateTime.style.width = 'fit-content';
+  dateTime.style.margin = '10px auto';
+}, 1000);
+
+// 3. Style challenges based on status
+challenges.forEach((li, index) => {
+  li.style.listStyle = 'none';
+  li.style.padding = '10px';
+  li.style.margin = '5px 0';
+  li.style.color = '#fff';
+  li.style.fontWeight = 'bold';
+
+  if (status[index] === 'completed') {
+    li.style.backgroundColor = 'green';
+  } else if (status[index] === 'ongoing') {
+    li.style.backgroundColor = 'yellow';
+    li.style.color = 'black';
+  } else if (status[index] === 'coming') {
+    li.style.backgroundColor = 'red';
+  }
+});
+
+// Utility: Get a random color in hex
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+// Optional: Basic container styling
+document.body.style.fontFamily = 'Arial, sans-serif';
+document.querySelector('.container').style.textAlign = 'center';
+  </script>
+</body>
+</html>
