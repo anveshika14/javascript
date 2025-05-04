@@ -46,3 +46,34 @@
 
 </body>
 </html>
+
+<!-- 2.Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conditional Paragraph Styling</title>
+</head>
+<body>
+
+  <p>This is the first paragraph.</p>
+  <p>This is the second paragraph.</p>
+  <p>This is the third paragraph.</p>
+  <p>This is the fourth paragraph.</p>
+
+  <script>
+    const paragraphs = document.querySelectorAll('p');
+
+    paragraphs.forEach((p, index) => {
+      if (index === 0 || index === 2) {
+        // First and third paragraph (index 0, 2)
+        p.style.color = "green";
+      } else if (index === 1 || index === 3) {
+        // Second and fourth paragraph (index 1, 3)
+        p.style.color = "red";
+      }
+    });
+  </script>
+
+</body>
+</html>
