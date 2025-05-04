@@ -1,0 +1,48 @@
+<!-- 1.Change stye of each paragraph using JavaScript(eg. color, background, border, font-size, font-family) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Paragraphs</title>
+</head>
+<body>
+
+  <p>This is the first paragraph.</p>
+  <p>This is the second paragraph.</p>
+  <p>This is the third paragraph.</p>
+  <p>This is the fourth paragraph.</p>
+
+  <script>
+    const paragraphs = document.querySelectorAll('p');
+
+    // First paragraph styles
+    paragraphs[0].style.color = "blue";
+    paragraphs[0].style.backgroundColor = "#f0f8ff";
+    paragraphs[0].style.border = "1px solid blue";
+    paragraphs[0].style.fontSize = "18px";
+    paragraphs[0].style.fontFamily = "Arial, sans-serif";
+
+    // Second paragraph styles
+    paragraphs[1].style.color = "green";
+    paragraphs[1].style.backgroundColor = "#e0ffe0";
+    paragraphs[1].style.border = "1px dashed green";
+    paragraphs[1].style.fontSize = "16px";
+    paragraphs[1].style.fontFamily = "Georgia, serif";
+
+    // Third paragraph styles
+    paragraphs[2].style.color = "darkred";
+    paragraphs[2].style.backgroundColor = "#ffe0e0";
+    paragraphs[2].style.border = "1px dotted red";
+    paragraphs[2].style.fontSize = "20px";
+    paragraphs[2].style.fontFamily = "'Courier New', monospace";
+
+    // Fourth paragraph styles
+    paragraphs[3].style.color = "purple";
+    paragraphs[3].style.backgroundColor = "#f5e6ff";
+    paragraphs[3].style.border = "2px solid purple";
+    paragraphs[3].style.fontSize = "17px";
+    paragraphs[3].style.fontFamily = "'Trebuchet MS', sans-serif";
+  </script>
+
+</body>
+</html>
