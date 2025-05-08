@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1d1f27;
+    color: #fff;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #planet-img img {
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+  }
+  
