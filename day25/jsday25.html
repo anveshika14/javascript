@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bar Graph - Population & Languages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .buttons {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .chart-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+    }
+
+    .label {
+      width: 200px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .bar-value {
+      height: 30px;
+      background-color: #4CAF50;
+      text-align: right;
+      padding-right: 10px;
+      color: white;
+      transition: width 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>World Statistics Bar Graph</h1>
+  <div class="buttons">
+    <button onclick="showPopulation()">Top 10 Populated Countries</button>
+    <button onclick="showLanguages()">Top 10 Spoken Languages</button>
+  </div>
+  <div class="chart-container" id="chart"></div>
+
+ 
+</body>
+</html>
