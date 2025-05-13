@@ -29,7 +29,8 @@ Throughout the 30 days, I've explored:
 - Advanced concepts: closures, promises, and DOM manipulation
 - Hands-on practice with mini projects
 
-🌟 Acknowledgments
+🌟 Acknowledgments :
+
 Huge thanks to Asabeneh Yetayeh for creating and maintaining this amazing free learning resource!
 
 ```bash
