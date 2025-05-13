@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Colorful Text</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: green;
+      font-family: Arial, sans-serif;
+      transition: background-color 2s ease;
+    }
+
+    .container {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      line-height: 1.4;
+    }
+
+    span.letter {
+      display: inline-block;
+      transition: color 2s ease, font-family 2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="textContainer">
+    <div>30  DAYS  OF  JAVASCRIPT</div>
+    <div>CHALLENGE  2020</div>
+    <div>ASABENEH  YETAYEH</div>
+  </div>
+
+  <script>
+    // Every 2 seconds
+  </script>
+
+</body>
+</html>
