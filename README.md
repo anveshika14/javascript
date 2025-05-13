@@ -23,10 +23,6 @@ You can browse through each day's folder to see the exercises and projects. Feel
 - Explore the logic
 - Tweak and play around to deepen your understanding!
 
-```bash
-git clone https://github.com/your-username/30DaysOfJavaScript.git
-cd 30DaysOfJavaScript
-
 🧠 Lessons Learned
 Throughout the 30 days, I've explored:
 - Core concepts: variables, arrays, objects, loops, and functions
@@ -35,3 +31,7 @@ Throughout the 30 days, I've explored:
 
 🌟 Acknowledgments
 Huge thanks to Asabeneh Yetayeh for creating and maintaining this amazing free learning resource!
+
+```bash
+git clone https://github.com/your-username/30DaysOfJavaScript.git
+cd 30DaysOfJavaScript
