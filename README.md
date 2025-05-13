@@ -30,9 +30,6 @@ Throughout the 30 days, I've explored:
 - Hands-on practice with mini projects
 
 🌟 Acknowledgments :
-
 Huge thanks to Asabeneh Yetayeh for creating and maintaining this amazing free learning resource!
 
-```bash
-git clone https://github.com/your-username/30DaysOfJavaScript.git
-cd 30DaysOfJavaScript
+
